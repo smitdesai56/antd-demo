@@ -1,0 +1,62 @@
+.loginContainer {
+    display: flex;
+    width: 100%;
+}
+
+.imgContainer {
+    width: 60%;
+    :global(.ant-image) {
+        width: 100%;
+    }
+    :global(.ant-image-img) {
+        height: 100vh;
+    }
+}
+
+.formContainer {
+    width: 40%;
+    padding: 9rem 0 0;
+    background: #f9f8f8;
+    min-height: 100vh;
+    :global(.ant-form-item-label) {
+        display: none;
+    }
+    h2 {
+        color: grey;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        display: none;
+    }
+    :global(.ant-form) {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgContainer {
+        display: none;
+    }
+    .formContainer {
+        width: 100%;
+        padding: 5rem 0 0;
+        h1 {
+            display: block;
+            text-align: center;
+            color: grey;
+            margin-bottom: 6rem;
+        }
+        :global(.ant-form) {
+            padding: 0 7rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .formContainer {
+        :global(.ant-form) {
+            padding: 0 2rem;
+        }
+    }
+}
